@@ -1,6 +1,5 @@
 <!-- todo_list/todo_app/templates/base.html -->
 <!-- Base template -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,12 +14,13 @@
 
 <body>
     <div>
-        <h1 onclick='location.href="{% url  index.html %}"'>
-            Django To-do Lists
+        <h1>
+            <a href="{% url 'index' %}">
+                Django To-do Lists</a>
         </h1>
     </div>
     <div>
-        {% bock content %}
+        {% block content %}
         This content will be replaced by different html code for each page.
         {% endblock %}
     </div>
